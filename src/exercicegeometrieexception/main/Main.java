@@ -6,15 +6,15 @@ import exercicegeometrieexception.wrk.*;
 
 public class Main {
 
-    public static void main( String[] args ) {
+    public static void main(String[] args) {
         Ctrl ctrl = new Ctrl();
         Ihm ihm = new Ihm();
         Wrk wrk = new Wrk();
 
-        ctrl.setRefIhm( ihm );
-        ctrl.setRefWorker( wrk );
+        ctrl.setRefIhm(ihm);
+        ctrl.setRefWorker(wrk);
 
-        ihm.setRefCtrl( ctrl );
+        ihm.setRefCtrl(ctrl);
 
         ctrl.demarrer();
     }

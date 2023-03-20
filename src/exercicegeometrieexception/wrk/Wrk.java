@@ -10,8 +10,8 @@ public class Wrk implements IWrkCtrl {
      * @return Le rayon
      */
     @Override
-    public double calcRadiusCircleFromArea( double area ) {
-        return Math.pow( area / Math.PI, 0.5 );
+    public double calcRadiusCircleFromArea(double area) {
+        return Math.pow(area / Math.PI, 0.5);
     }
 
     /**
@@ -21,24 +21,25 @@ public class Wrk implements IWrkCtrl {
      *
      * @return Le rayon
      */
-    public double calcRadiusCircleFromPerimeter( double perimeter ) {
-        return perimeter / ( 2 * Math.PI );
+    public double calcRadiusCircleFromPerimeter(double perimeter) {
+        return perimeter / (2 * Math.PI);
     }
 
     /**
-     * Calcule la largeur d'un rectangle en fonction de son aire et de sa longueur.
+     * Calcule la largeur d'un rectangle en fonction de son aire et de sa
+     * longueur.
      *
      * @param area Aire totale du rectangle
-     * @param x    Longueur du rectangle
+     * @param x Longueur du rectangle
      *
      * @return Largeur du rectangle
      *
      * @exception ArithmeticException En cas de division par 0
      */
     @Override
-    public double calcLargeurFromRectangle( double area, double x ) throws ArithmeticException {
-        if ( x == 0 ) {
-            throw new ArithmeticException( "division par 0!" );
+    public double calcLargeurFromRectangle(double area, double x) throws ArithmeticException {
+        if (x == 0) {
+            throw new ArithmeticException("division par 0!");
         }
         return area / x;
     }
